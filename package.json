@@ -1,0 +1,67 @@
+{
+  "name": "sass-boilderplate",
+  "version": "1.0.0",
+  "description": "Sass Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --watch --progress --profile --colors",
+    "build": "concurrently \"cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --profile --colors\" \"nodemon www.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/George-Kishmareia/Sass-Boilerplate.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "boilerplate",
+    "css",
+    "javascript"
+  ],
+  "author": "George Kishmareia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/George-Kishmareia/Sass-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/George-Kishmareia/Sass-Boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-runtime": "^6.22.0",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "0.26.1",
+    "eslint": "^3.6.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "file-loader": "^0.10.0",
+    "glob": "^7.1.2",
+    "html": "^1.0.0",
+    "image-webpack-loader": "^3.3.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^1.3.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-polyfill": "^6.22.0",
+    "browser-sync": "^2.18.13",
+    "copy-webpack-plugin": "^4.0.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^v2.0.0-rc.1",
+    "html-webpack-plugin": "^2.26.0",
+    "webpack": "^2.2.1",
+    "webpack-cleanup-plugin": "^0.4.2",
+    "webpack-dashboard": "^0.3.0",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
